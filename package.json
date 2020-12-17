@@ -1,0 +1,20 @@
+{
+  "name": "anti-scam-kit",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:history": "node src/history-generator.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "get-website-favicon": "^0.0.7",
+    "neat-csv": "^6.0.0",
+    "sqlite": "^4.0.18",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
