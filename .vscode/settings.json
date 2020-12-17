@@ -1,0 +1,23 @@
+{
+  "[json]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[css,js,ts]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4
+  },
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": false,
+  "eslint.nodePath": "./node_modules",
+  "eslint.options": { "configFile": "./.eslintrc.yml" },
+  "eslint.packageManager": "yarn",
+  "eslint.validate": [ "javascript", "javascriptreact", "html", "typescript", "typescriptreact" ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/__snapshots__/**": true,
+    "dist/js/**": true,
+    "node_modules/**": true,
+    "yarn.lock": true
+  }
+}

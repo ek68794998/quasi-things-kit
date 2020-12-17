@@ -1,0 +1,135 @@
+---
+extends:
+- eslint:recommended
+env:
+  browser: true
+  es6: true
+  node: true
+parserOptions:
+  ecmaVersion: 8
+plugins:
+- import
+settings:
+  react:
+    version: detect
+rules:
+  arrow-body-style: error
+  arrow-parens:
+  - error
+  - as-needed
+  camelcase: error
+  comma-dangle:
+  - error
+  - arrays: always-multiline
+    objects: always-multiline
+    imports: always-multiline
+    exports: always-multiline
+    functions: always-multiline
+  complexity: "off"
+  constructor-super: error
+  curly: error
+  default-case: error
+  dot-notation: error
+  eol-last: "off"
+  eqeqeq:
+  - error
+  - smart
+  guard-for-in: error
+  id-blacklist:
+  - error
+  - any
+  - Undefined
+  - undefined
+  id-match: error
+  import/no-absolute-path: 2
+  import/no-extraneous-dependencies: error
+  import/no-internal-modules: "off"
+  import/order:
+  - error
+  - alphabetize:
+      order: asc
+    groups:
+    - - builtin
+      - external
+    - parent
+    - sibling
+    newlines-between: always-and-inside-groups
+  lines-between-class-members:
+  - error
+  - always
+  - exceptAfterSingleLine: true
+  max-classes-per-file:
+  - error
+  - 1
+  max-len:
+  - error
+  - code: 120
+    ignorePattern: '[`"''](\)*;|\})?$'
+    ignoreStrings: true
+  new-parens: error
+  no-bitwise: error
+  no-caller: error
+  no-cond-assign: error
+  no-console: "off"
+  no-debugger: error
+  no-duplicate-case: error
+  no-duplicate-imports: error
+  no-empty: error
+  no-eval: error
+  no-extra-bind: error
+  no-fallthrough: error
+  no-invalid-this: "off"
+  no-multiple-empty-lines: error
+  no-new-func: error
+  no-new-wrappers: error
+  no-redeclare: error
+  no-return-await: error
+  no-sequences: error
+  no-shadow:
+  - error
+  - builtinGlobals: true
+    hoist: all
+  no-sparse-arrays: error
+  no-template-curly-in-string: error
+  no-throw-literal: error
+  no-trailing-spaces: error
+  no-undef-init: error
+  no-underscore-dangle:
+  - error
+  - allow:
+    - __PRELOADED_STATE__
+    - __REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+  no-unsafe-finally: error
+  no-unused-expressions: error
+  no-unused-labels: error
+  no-unused-vars: "off"
+  no-var: error
+  object-shorthand: error
+  one-var:
+  - error
+  - never
+  padding-line-between-statements:
+  - error
+  - blankLine: always
+    prev: "*"
+    next: "return"
+  prefer-const: error
+  prefer-object-spread: error
+  quote-props:
+  - error
+  - consistent-as-needed
+  radix: error
+  semi:
+  - error
+  - always
+  space-before-function-paren:
+  - error
+  - anonymous: never
+    asyncArrow: always
+    named: never
+  space-in-parens:
+  - error
+  - never
+  spaced-comment: error
+  use-isnan: error
+  valid-typeof: "off"
